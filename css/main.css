@@ -1,0 +1,58 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "c00 c01 c02" 
+                         "c10 c11 c12"
+                         "c20 c21 c22";
+    width: 400px;
+    height: 400px;
+  }
+  
+  .grid-container > div {
+    border: 1px solid black;
+    width: calc(400px / 3);
+    height: calc(400px / 3);
+    background-color: pink;
+  }
+  .c00 {
+    grid-area: c00;
+  }
+  .c01 {
+    grid-area: c01;
+  }
+  .c02 {
+    grid-area: c02;
+  }
+  .c10 {
+    grid-area: c10;
+  }
+  .c11 {
+    grid-area: c11;
+  }
+  .c12 {
+    grid-area: c12;
+  }
+  .c20 {
+    grid-area: c20;
+  }
+  .c21 {
+    grid-area: c21;
+  }
+  .c22 {
+    grid-area: c22;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    width: calc(333px / 3);
+    height: calc(333px / 3);
+    border: 10px solid white;
+  }
+  
+  .cross {  
+      font-size: 177px;
+      text-align: center;
+      margin-top: -36px;
+  }
